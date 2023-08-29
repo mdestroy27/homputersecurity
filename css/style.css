@@ -672,6 +672,7 @@ body {
     display: table;
     margin-right: 5rem;
     min-height: 50px;
+    font-size: 12px;
   }
   #header #title h1 {
     display: table-cell;
