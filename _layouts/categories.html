@@ -3,20 +3,37 @@ title: "Categories"
 layout: default
 permalink: "/categories.html"
 ---
-{% for category in site.categories %}
-<h4 class="mt-5 mb-4 pb-2 border-bottom" id="{{ category[0] | replace: " ","-" }}"><span class="text-capitalize small font-weight-bold">In "{{ category[0] }}"</span></h4>
-<div class="row">
-{% assign pages_list = category[1] %}
-{% for post in pages_list %}
-{% if post.title != null %}
-{% if group == null or group == post.group %}
-<div class="col-md-4 mb-5">
-{% include postbox.html %}
+<h2>Posts related to: {{ page.title }}</h2>
+
+{% unless page.content == '' %}
+    <p>{{ page.content }}</p>
+{% endunless %}
+
+{% unless site.categories.[page.category] | size > 0 %}
+    <p>No posts in this category at this time.</p>
+{% endunless %}
+
+{% for post in site.categories.[page.category] %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">            
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">
+        Posted by 
+        {% if post.author %}
+        {{ post.author }}
+        {% else %}
+        {{ site.title }}
+        {% endif %} 
+        on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
 </div>
-{% endif %}
-{% endif %}
-{% endfor %}
-{% assign pages_list = nil %}
-{% assign group = nil %}
-</div>
+<hr>
 {% endfor %}
