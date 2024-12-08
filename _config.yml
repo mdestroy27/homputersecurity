@@ -7,7 +7,7 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 author: Sal
 paginate: 30
-disqus:
+disqus: 'demowebsite'
 locale: en_us
 lang: en_us
 feed_items: 10
@@ -31,7 +31,7 @@ authors:
     email: martydbrou@gmail.com
     web: 
     twitter: 
-    description: 
+    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
 
 
 # Social
