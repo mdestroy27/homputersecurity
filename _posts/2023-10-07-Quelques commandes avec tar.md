@@ -5,6 +5,9 @@ author: mdestroy
 categories: [ Linux, Tutorial ]
 image: assets/images/tar0.png
 ---
+
+![tar0]({{ site.baseurl }}/assets/images/tar0.png)
+
 tape archive ou encore tar est un outil sous Linux permettant de créer et d’extraire des archives compressées et non-compressées.
 
 L’archivage n’est rien d’autre que la combinaison de plusieurs fichiers en un seul. Aucun gain en espace. La compression permet quant à elle de réduire la taille des fichiers en plus de les combiner.
@@ -23,28 +26,28 @@ Tout au long de cet article, nous utiliserons chacun de ces styles.
 
 Voyons quelques commandes tar utiles dans l’administration Linux.
 
-## Archives
-# Création d’une archive
+# Archives
+## Création d’une archive
 
 {% highlight ruby %}$ tar -cvf folder.tar folder {% endhighlight %}
 
-# Création d’une archive en gardant intact le chemin absolu des fichiers
+## Création d’une archive en gardant intact le chemin absolu des fichiers
 
 {% highlight ruby %}$ tar cPvf folder.tar tar-test/* {% endhighlight %}
 
 ![tar1]({{ site.baseurl }}/assets/images/tar1.png)
 
-# Suppression d’un fichier dans une archive
+## Suppression d’un fichier dans une archive
 
 {% highlight ruby %}$ tar --delete -f folder.tar file1 {% endhighlight %}
 
 ![tar2]({{ site.baseurl }}/assets/images/tar2.png)
 
-# Ajout d’un fichier dans une archive
+## Ajout d’un fichier dans une archive
 
 {% highlight ruby %}$ tar -rvf folder.tar file6 {% endhighlight %}
 
-# Mise à jour d’une archive
+## Mise à jour d’une archive
 
 tar ne prend pas en charge la mise à jour “sur place” des fichiers. Il est cependant possible d’ajouter le fichier mis à jour à la fin d’une archive, même s’il a le même chemin que le fichier déjà présent dans l’archive. Les deux copies du fichier seront dans l’archive et le fichier ajouté ultérieurement remplacera le précédent.
 
@@ -52,7 +55,7 @@ tar ne prend pas en charge la mise à jour “sur place” des fichiers. Il est 
 
 {% highlight ruby %}$ tar uvf folder.tar file1 {% endhighlight %}
 
-## Archives compressées
+# Archives compressées
 
 Plusieurs utilités de compressions sont supportées par tar. Les 3 plus populaires:
 + gzip représenté par l’option -z ou –gzip,
@@ -65,11 +68,11 @@ Ces utilités de compression sont reconnaissables par les extensionns suivantes:
 + Pour bzip2, on a : tar.bz2 ou tbz2,
 + Pour xz, on a : tar.xz ou txz.
 
-# Création d’une archive compressée
+## Création d’une archive compressée
 
 {% highlight ruby %}$ tar czvf folder.tgz folder {% endhighlight %}
 
-# Création d’une archive compressée en gardant intact le chemin absolu des fichiers
+## Création d’une archive compressée en gardant intact le chemin absolu des fichiers
 
 {% highlight ruby %}$ tar cJPvf folder.xz folder {% endhighlight %}
 
@@ -79,7 +82,7 @@ C’est ce que nous verrons dans les lignes suivantes:
 
 ![tar4]({{ site.baseurl }}/assets/images/tar4.png)
 
-# Suppression d’un fichier dans une archive compressée
+## Suppression d’un fichier dans une archive compressée
 
 {% highlight ruby %}
 $ bunzip2 folder.tar.bz2
@@ -87,7 +90,7 @@ $ tar --delete -f folder.tar.bz2 file1
 $ tar cjvf folder.tar.bz2 folder.tar ou bzip2 folder.tar
 {% endhighlight %}
 
-# Ajout d’un fichier dans une archive compressée
+## Ajout d’un fichier dans une archive compressée
 
 {% highlight ruby %}
 $ unxz folder.tar.xz
@@ -95,7 +98,7 @@ $ tar rvf folder.tar file7
 $ tar cJvf folder.tar.xz folder.tar ou xz folder.tar
 {% endhighlight %}
 
-# Mise à jour d’une archive compressée
+## Mise à jour d’une archive compressée
 
 {% highlight ruby %}
 $ gunzip archive.tar.gz
@@ -103,27 +106,27 @@ $ tar uvf folder.tar file2
 $ tar czvf folder.tar.gz folder.tar ou gzip folder.tar
 {% endhighlight %}
 
-## Commandes communes
-# Lecture
+# Commandes communes
+## Lecture
 
 {% highlight ruby %}$ tar -tf folder.tar{% endhighlight %}
 
-# Extraction
+## Extraction
 
 {% highlight ruby %}$ tar xvf folder.tar{% endhighlight %}
 
-# Extraction d’un fichier
+## Extraction d’un fichier
 
 {% highlight ruby %}$ tar -xvf folder.tar.bz2 file2{% endhighlight %}
 
 ![tar5]({{ site.baseurl }}/assets/images/tar5.png)
 
-# Exclusion d’un fichier lors de l’archivage
+## Exclusion d’un fichier lors de l’archivage
 Adapter la commande selon l’utilité de compression ou le type d’archive
 
 {% highlight ruby %}$ tar -cjvf folder.tar.bz2 --exclude={“file5”,”file6”} file*{% endhighlight %}
 
-# Exclusion d’un dossier ou fichier lors de l’extraction
+## Exclusion d’un dossier ou fichier lors de l’extraction
 Adapter la commande selon l’utilité de compression ou le type d’archive
 
 {% highlight ruby %}$ tar xvf folder.tar.bz2 folder --exclude={file2,file9}{% endhighlight %}
