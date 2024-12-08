@@ -2,7 +2,7 @@
     <div class="sidebar-section">
         <h5><span>Categories</span></h5>
         {% for category in site.categories %}
-    <a href="/categories/#{{ category[0] }}" style="text-decoration: none;"></a><br />
+    <a href="/categories/#{{ category[0] }}" style="text-decoration: none;"> {% if category[0] == 'aws' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %} </a> <br />
 {% endfor %}
     </div>	
 
