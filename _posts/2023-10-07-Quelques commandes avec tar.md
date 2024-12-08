@@ -2,11 +2,9 @@
 layout: post
 title:  "Quelques commandes avec tar"
 author: mdestroy
-categories: [ Linux, Tutorial ]
+categories: [ Linux, Sysadmin ]
 image: assets/images/tar0.jpg
 ---
-
-![tar0]({{ site.baseurl }}/assets/images/tar0.jpg)
 
 tape archive ou encore tar est un outil sous Linux permettant de créer et d’extraire des archives compressées et non-compressées.
 
