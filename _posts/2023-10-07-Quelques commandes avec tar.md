@@ -6,7 +6,7 @@ categories: [ Linux, Sysadmin ]
 image: assets/images/tar0.jpg
 ---
 
-tape archive ou encore tar est un outil sous Linux permettant de créer et d’extraire des archives compressées et non-compressées.
+`tape archive` ou encore tar est un outil sous Linux permettant de créer et d’extraire des archives compressées et non-compressées.
 
 L’archivage n’est rien d’autre que la combinaison de plusieurs fichiers en un seul. Aucun gain en espace. La compression permet quant à elle de réduire la taille des fichiers en plus de les combiner.
 
