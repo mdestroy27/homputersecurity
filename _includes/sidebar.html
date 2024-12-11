@@ -4,7 +4,7 @@
   <ul>
 {% for category in site.categories %}
       <li>
-        <a href="{{ '/categories/#' }}">{{ category[0] }}</a>
+        <a href="{{ '/categories/#' | append: category[0] }}">{{ category[0] }}</a>
       </li>
     {% endfor %}
   </ul>
