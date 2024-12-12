@@ -613,29 +613,3 @@ span.navigation:before {
     transition: all.3s;
     opacity:.8;
 }
-
-.sidebar {
-  width: 25%;
-  float: right;
-  background-color: #f9f9f9;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar h2 {
-  margin-top: 0;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin-bottom: 10px;
-}
-
-.sidebar ul li ul {
-  padding-left: 15px;
-}
-
