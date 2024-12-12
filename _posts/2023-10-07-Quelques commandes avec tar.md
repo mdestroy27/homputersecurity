@@ -2,7 +2,7 @@
 layout: post
 title:  "Quelques commandes avec tar"
 author: mdestroy
-categories: [ Linux ]
+categories: [ Linux, Sysadmin ]
 image: assets/images/tar0.jpg
 ---
 
