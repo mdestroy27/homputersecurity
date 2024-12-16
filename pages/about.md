@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bienvenue sur Blog.HompterSecurity.net !
+title: Welcome to Blog.HompterSecurity.net !
 permalink: "/about/"
 image: assets/images/writer.png
 ---
