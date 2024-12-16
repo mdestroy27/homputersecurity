@@ -1,10 +1,9 @@
 ---
 layout: page
-title: About
+title: Bienvenue sur Blog.HompterSecurity.net !
 permalink: "/about/"
 image: assets/images/writer.png
 ---
-# Bienvenue sur Blog.HompterSecurity.net !
 
 Il y a dix ans, je faisais mes premiers pas dans l'univers de la maintenance informatique, au sein d'une petite organisation caritative près de Newport, au Pays de Galles. À cette époque, je n'aurais jamais imaginé que seulement trois ans plus tard, je débuterais une carrière en informatique… encore moins en sécurité informatique !
 
@@ -22,7 +21,5 @@ Sur **blog.homputersecurity.net**, vous trouverez :
 + Une touche de hacking éthique pour explorer les vulnérabilités et renforcer vos compétences.
 
 Merci de votre intérêt et à très bientôt pour de nouveaux articles inspirants et enrichissants !
-
-Stay Tuned,
 
 mdestroy
