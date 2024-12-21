@@ -9,5 +9,15 @@
     {% endfor %}
   </ul>
 </div>
+    <div class="sidebar-section">
+        <h5><span>Tags</span></h5>
+  <ul>
+{% for tag in site.tags %}
+      <li>
+        <a href="{{ '/tags/#' | append: tag[0] }}">{{ tag[0] }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 </div>
 

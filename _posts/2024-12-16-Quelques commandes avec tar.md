@@ -3,7 +3,7 @@ layout: post
 title:  "Quelques commandes avec tar"
 author: mdestroy
 categories: [ Linux ]
-image: assets/images/tar0.jpg
+image: assets/HSImages/images/tar0.jpg
 ---
 
 `tape archive` ou encore `tar` est un outil sous Linux permettant de créer et d’extraire des archives compressées et non-compressées.
@@ -33,13 +33,13 @@ Voyons quelques commandes tar utiles dans l’administration Linux.
 
 {% highlight ruby %}$ tar cPvf folder.tar tar-test/* {% endhighlight %}
 
-![tar1]({{ site.baseurl }}/assets/images/tar1.png)
+![tar1]({{ site.baseurl }}/assets/images/HSImages/HSImages/tar1.png)
 
 ## Suppression d’un fichier dans une archive
 
 {% highlight ruby %}$ tar --delete -f folder.tar file1 {% endhighlight %}
 
-![tar2]({{ site.baseurl }}/assets/images/tar2.png)
+![tar2]({{ site.baseurl }}/assets/images/HSImages/HSImages/tar2.png)
 
 ## Ajout d’un fichier dans une archive
 
@@ -49,7 +49,7 @@ Voyons quelques commandes tar utiles dans l’administration Linux.
 
 tar ne prend pas en charge la mise à jour “sur place” des fichiers. Il est cependant possible d’ajouter le fichier mis à jour à la fin d’une archive, même s’il a le même chemin que le fichier déjà présent dans l’archive. Les deux copies du fichier seront dans l’archive et le fichier ajouté ultérieurement remplacera le précédent.
 
-![tar3]({{ site.baseurl }}/assets/images/tar3.png)
+![tar3]({{ site.baseurl }}/assets/images/HSImages/HSImages/tar3.png)
 
 {% highlight ruby %}$ tar uvf folder.tar file1 {% endhighlight %}
 
@@ -78,8 +78,6 @@ L’ajout, la suppression, la mise à jour de fichier dans une archive compress�
 Chacune de ces opérations se réalise sous tar en trois étapes: l’extraction de l’archive compressée à l’aide de l’utilité de décompression correspondant, ensuite la réalisation de l’opération voulue et finalement la “re-compression” de l’archive.
 C’est ce que nous verrons dans les lignes suivantes:
 
-![tar4]({{ site.baseurl }}/assets/images/tar4.png)
-
 ## Suppression d’un fichier dans une archive compressée
 
 {% highlight ruby %}
@@ -87,6 +85,8 @@ $ bunzip2 folder.tar.bz2
 $ tar --delete -f folder.tar.bz2 file1
 $ tar cjvf folder.tar.bz2 folder.tar ou bzip2 folder.tar
 {% endhighlight %}
+
+![tar4]({{ site.baseurl }}/assets/images/HSImages/tar4.png)
 
 ## Ajout d’un fichier dans une archive compressée
 
@@ -117,7 +117,7 @@ $ tar czvf folder.tar.gz folder.tar ou gzip folder.tar
 
 {% highlight ruby %}$ tar -xvf folder.tar.bz2 file2{% endhighlight %}
 
-![tar5]({{ site.baseurl }}/assets/images/tar5.png)
+![tar5]({{ site.baseurl }}/assets/images/HSImages/tar5.png)
 
 ## Exclusion d’un fichier lors de l’archivage
 Adapter la commande selon l’utilité de compression ou le type d’archive
