@@ -3,6 +3,7 @@ layout: post
 title:  "Quelques commandes avec tar"
 author: mdestroy
 categories: [ Linux ]
+tags: [ tar ]
 image: assets/HSImages/images/tar0.jpg
 ---
 
