@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "Comment recevoir des notifications de connexion SSH sur Telegram ?"
+author: mdestroy
 categories: [ Security ]
+tags: [ SSH, Telegram ]
 image: assets/images/HSImages/telegram-sshrc.png
 ---
 
