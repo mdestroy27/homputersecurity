@@ -112,5 +112,5 @@ wget -o /dev/null -O /dev/null "https://api.telegram.org/bot${BOT_TOKEN}/sendMes
 
 A la prochaine connexion SSH, vous recevrez une notification sur Telegram.
 
-![Nouvelle connexion SSH]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc10.png)
+![Nouvelle connexion SSH]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc10.jpeg)
 
