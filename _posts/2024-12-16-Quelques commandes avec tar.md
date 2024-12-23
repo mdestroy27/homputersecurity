@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "Quelques commandes avec tar"
-author: mdestroy
 categories: [ Linux ]
 tags: [ tar ]
-image: assets/HSImages/images/tar0.jpg
+image: /assets/HSImages/images/tar0.jpg
 ---
 
 `tape archive` ou encore `tar` est un outil sous Linux permettant de créer et d’extraire des archives compressées et non-compressées.
@@ -34,13 +33,13 @@ Voyons quelques commandes tar utiles dans l’administration Linux.
 
 {% highlight ruby %}$ tar cPvf folder.tar tar-test/* {% endhighlight %}
 
-![tar1]({{ site.baseurl }}/assets/images/HSImages/HSImages/tar1.png)
+![tar1]({{ site.baseurl }}/assets/images/HSImages/tar1.png)
 
 ## Suppression d’un fichier dans une archive
 
 {% highlight ruby %}$ tar --delete -f folder.tar file1 {% endhighlight %}
 
-![tar2]({{ site.baseurl }}/assets/images/HSImages/HSImages/tar2.png)
+![tar2]({{ site.baseurl }}/assets/images/HSImages/tar2.png)
 
 ## Ajout d’un fichier dans une archive
 
@@ -50,7 +49,7 @@ Voyons quelques commandes tar utiles dans l’administration Linux.
 
 tar ne prend pas en charge la mise à jour “sur place” des fichiers. Il est cependant possible d’ajouter le fichier mis à jour à la fin d’une archive, même s’il a le même chemin que le fichier déjà présent dans l’archive. Les deux copies du fichier seront dans l’archive et le fichier ajouté ultérieurement remplacera le précédent.
 
-![tar3]({{ site.baseurl }}/assets/images/HSImages/HSImages/tar3.png)
+![tar3]({{ site.baseurl }}/assets/images/HSImages/tar3.png)
 
 {% highlight ruby %}$ tar uvf folder.tar file1 {% endhighlight %}
 
