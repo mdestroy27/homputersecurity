@@ -1,7 +1,7 @@
 title: "Homputer Security"
 email: martydbrou@gmail.com
 timezone: UTC
-baseurl: "blog.homputersecurity.net"
+baseurl:
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
