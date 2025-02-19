@@ -28,13 +28,17 @@ Pour créer un bot Telegram, ouvrez votre application, puis saisissez tout simpl
 
 Une fois dans le chatbox de BotFather, choisissez l'option **/newbot**:
 
-![Chat avec BotFather]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc2.jpeg)
+<a href="/assets/images/HSImages/telegram-sshrc2.jpeg" target="_blank">
+    <img src="/assets/images/HSImages/telegram-sshrc2.jpeg" alt="Chat avec BotFather" style="max-width: 100%; height: auto;">
+</a>
 
 Vous aurez à repondre à une serie de questions de façon interactive pour finaliser la création du bot.
 Il vous sera demandé de choisir un nom pour votre bot, ensuite un nom d'utilisateur qui doit se terminer par `_bot`.
 Notez bien votre token qui sera affiché tout juste après HTTP API (section barrée en rouge dans l'image ci-dessous).
 
-![Création du bot]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc3.jpeg)
+<a href="/assets/images/HSImages/telegram-sshrc3.jpeg" target="_blank">
+    <img src="/assets/images/HSImages/telegram-sshrc3.jpeg" alt="Création du bot" style="max-width: 100%; height: auto;">
+</a>
 
 Son format est le suivant:
 
@@ -42,11 +46,15 @@ Son format est le suivant:
 
 En cliquant sur le lien t.me/[BotUser Name] encadré dans l'image présentée ci-dessus, vous accéderez au chatbox de votre bot que vous venez de créer.
 
-![Chat avec le bot créé]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc4.jpeg)
+<a href="/assets/images/HSImages/telegram-sshrc4.jpeg" target="_blank">
+    <img src="/assets/images/HSImages/telegram-sshrc4.jpeg" alt="Chat avec le bot créé" style="max-width: 100%; height: auto;">
+</a>
 
 Laissez juste un message dans le chat...
 
-![Message avec le bot]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc5.jpeg)
+<a href="/assets/images/HSImages/telegram-sshrc5.jpeg" target="_blank">
+    <img src="/assets/images/HSImages/telegram-sshrc5.jpeg" alt="Message avec le bot" style="max-width: 100%; height: auto;">
+</a>
 
 ...Puis, accédez au lien ci-dessous avec votre navigateur Web:
 
@@ -54,13 +62,17 @@ Laissez juste un message dans le chat...
 
 Notez l'ID du chat. Il nous sera utile pour l'envoi des messages sur l'API du bot qui vient d'être créé.
 
-![Updates]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc6.png)
+<a href="/assets/images/HSImages/telegram-sshrc6.png" target="_blank">
+    <img src="/assets/images/HSImages/telegram-sshrc6.png" alt="Updates" style="max-width: 100%; height: auto;">
+</a>
 
 Essayons à présent d'envoyer un message à notre application Telegram via l'API:
 
 {% highlight ruby %} https://api.telegram.org/bot[Token du Bot]/sendMessage?chat_id=[ID du chat du Bot]&text=Hello Again{% endhighlight %}
 
-![Message via le navigateur sur Telegram]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc7.png)
+<a href="/assets/images/HSImages/telegram-sshrc7.png" target="_blank">
+    <img src="/assets/images/HSImages/telegram-sshrc7.png" alt="Message via le navigateur sur Telegram" style="max-width: 100%; height: auto;">
+</a>
 
 Notez bien ce lien car c'est à travers celui-ci que les notifications seront envoyées sur l'application Telegram.
 Nous y reviendrons bien plutard dans la suite de l'article.
@@ -88,7 +100,9 @@ Il ne nous restera plus qu'à configurer l'envoi des messages via l'API de notre
 
 Avec la variable `$SSH_CONNECTION`, nous avons les adresses IP source et destination ainsi que les ports liés à la connexion SSH en cours.
 
-![La variable $SSH_CONNECTION]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc8.png)
+<a href="/assets/images/HSImages/telegram-sshrc8.png" target="_blank">
+    <img src="/assets/images/HSImages/telegram-sshrc8.png" alt="La variable $SSH_CONNECTION" style="max-width: 100%; height: auto;">
+</a>
 
 Nous allons nous en servir pour inclure l'adresse source dans les notifications envoyées sur Telegram.
 
@@ -109,10 +123,13 @@ wget -o /dev/null -O /dev/null "https://api.telegram.org/bot${BOT_TOKEN}/sendMes
 
 {% endhighlight %}
 
-![Script sshrc]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc9.png)
-
+<a href="/assets/images/HSImages/telegram-sshrc9.jpeg" target="_blank">
+    <img src="/assets/images/HSImages/telegram-sshrc9.jpeg" alt="Script sshrc" style="max-width: 100%; height: auto;">
+</a>
 
 A la prochaine connexion SSH, vous recevrez une notification sur Telegram.
 
-![Nouvelle connexion SSH]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc10.jpeg)
+<a href="/assets/images/HSImages/telegram-sshrc10.png" target="_blank">
+    <img src="/assets/images/HSImages/telegram-sshrc10.png" alt="Nouvelle connexion SSH" style="max-width: 100%; height: auto;">
+</a>
 
