@@ -34,13 +34,17 @@ Voyons quelques commandes tar utiles dans l’administration Linux.
 
 {% highlight ruby %}$ tar cPvf folder.tar tar-test/* {% endhighlight %}
 
-![tar1]({{ site.baseurl }}/assets/images/HSImages/tar1.png)
+<a href="/assets/images/HSImages/tar1.png" target="_blank">
+    <img src="/assets/images/HSImages/tar1.png" alt="tar1" style="max-width: 100%; height: auto;">
+</a>
 
 ## Suppression d’un fichier dans une archive
 
 {% highlight ruby %}$ tar --delete -f folder.tar file1 {% endhighlight %}
 
-![tar2]({{ site.baseurl }}/assets/images/HSImages/tar2.png)
+<a href="/assets/images/HSImages/tar2.png" target="_blank">
+    <img src="/assets/images/HSImages/tar2.png" alt="tar2" style="max-width: 100%; height: auto;">
+</a>
 
 ## Ajout d’un fichier dans une archive
 
@@ -50,7 +54,9 @@ Voyons quelques commandes tar utiles dans l’administration Linux.
 
 tar ne prend pas en charge la mise à jour “sur place” des fichiers. Il est cependant possible d’ajouter le fichier mis à jour à la fin d’une archive, même s’il a le même chemin que le fichier déjà présent dans l’archive. Les deux copies du fichier seront dans l’archive et le fichier ajouté ultérieurement remplacera le précédent.
 
-![tar3]({{ site.baseurl }}/assets/images/HSImages/tar3.png)
+<a href="/assets/images/HSImages/tar3.png" target="_blank">
+    <img src="/assets/images/HSImages/tar3.png" alt="tar3" style="max-width: 100%; height: auto;">
+</a>
 
 {% highlight ruby %}$ tar uvf folder.tar file1 {% endhighlight %}
 
@@ -87,7 +93,9 @@ $ tar --delete -f folder.tar.bz2 file1
 $ tar cjvf folder.tar.bz2 folder.tar ou bzip2 folder.tar
 {% endhighlight %}
 
-![tar4]({{ site.baseurl }}/assets/images/HSImages/tar4.png)
+<a href="/assets/images/HSImages/tar4.png" target="_blank">
+    <img src="/assets/images/HSImages/tar4.png" alt="tar4" style="max-width: 100%; height: auto;">
+</a>
 
 ## Ajout d’un fichier dans une archive compressée
 
@@ -118,7 +126,9 @@ $ tar czvf folder.tar.gz folder.tar ou gzip folder.tar
 
 {% highlight ruby %}$ tar -xvf folder.tar.bz2 file2{% endhighlight %}
 
-![tar5]({{ site.baseurl }}/assets/images/HSImages/tar5.png)
+<a href="/assets/images/HSImages/tar5.png" target="_blank">
+    <img src="/assets/images/HSImages/tar5.png" alt="tar5" style="max-width: 100%; height: auto;">
+</a>
 
 ## Exclusion d’un fichier lors de l’archivage
 Adapter la commande selon l’utilité de compression ou le type d’archive
