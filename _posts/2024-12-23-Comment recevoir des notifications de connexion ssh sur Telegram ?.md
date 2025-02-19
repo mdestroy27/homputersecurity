@@ -22,7 +22,11 @@ Créés avec l'API Telegram Bot, ces bots peuvent automatiser des tâches, gére
 
 Pour créer un bot Telegram, ouvrez votre application, puis saisissez tout simplement `Botfather` dans la barre de recherche comme dans l'image ci-dessous:
 
-![A la recherche de BotFather]({{ blog.homputersecurity.net }}/assets/images/HSImages/telegram-sshrc1.jpeg)
+#![A la recherche de BotFather]({{ site.baseurl }}/assets/images/HSImages/telegram-sshrc1.jpeg)
+
+<a href="/assets/images/HSImages/telegram-sshrc1.jpeg" target="_blank">
+    <img src="/assets/images/HSImages/telegram-sshrc1.jpeg" alt="Image 1" style="max-width: 100%; height: auto;">
+</a>
 
 Une fois dans le chatbox de BotFather, choisissez l'option **/newbot**:
 
